@@ -13,6 +13,7 @@ namespace PomodoroTimer
 {
     public partial class Form1 : Form
     {
+        // Initialize static variables to handle timer.
         private static System.Timers.Timer aTimer;
         static bool stop = false;
         static TimeValues timeValue = new TimeValues();
@@ -22,20 +23,12 @@ namespace PomodoroTimer
             InitializeComponent();
         }
 
-        private void numericUpDownSeconds_ValueChanged(object sender, EventArgs e)
-        {
-            timeValue.Seconds = numericUpDownSeconds.Value;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            // Start the timer, check for existing time left on the clock and input validity.
             if (timeValue.Seconds == 0 && timeValue.Minutes == 0 && timeValue.Hours == 0)
             {
+                // Creates an error pop-up if no time is set.
                 string messageError = "Invalid time selection. Please use the boxes to create a valid time input.";
                 string captionError = "No Time Input";
                 MessageBoxButtons buttonsError = MessageBoxButtons.OK;
@@ -45,6 +38,7 @@ namespace PomodoroTimer
             }
             if (timeValue.TimeRemaining <= 0)
             {
+                // Modifies the timer values to reflect the user's settings. 
                 timeValue.TimeRemaining = timeValue.Seconds;
                 timeValue.TimeRemaining += timeValue.Minutes * 60;
                 timeValue.TimeRemaining += timeValue.Hours * 3600;
@@ -53,6 +47,7 @@ namespace PomodoroTimer
                 timeValue.NextStepThreshold = timeValue.InitialTime / 100;
             }
 
+            // Begins the timer
             stop = false;
             aTimer = new System.Timers.Timer(100);
             aTimer.Enabled = true;
@@ -62,6 +57,7 @@ namespace PomodoroTimer
 
         private static void OnTimedEvent(Object source, System.Timers.ElapsedEventArgs e)
         {
+            // Decrement and check TimeRemaining to stop the timer if it is complete or paused.
             timeValue.TimeRemaining -= 100;
 
             if (timeValue.TimeRemaining < 0)
@@ -83,6 +79,12 @@ namespace PomodoroTimer
             }
         }
 
+        // Time slider controls
+        private void numericUpDownSeconds_ValueChanged(object sender, EventArgs e)
+        {
+            timeValue.Seconds = numericUpDownSeconds.Value;
+        }
+
         private void numericUpDownMinutes_ValueChanged(object sender, EventArgs e)
         {
             timeValue.Minutes = numericUpDownMinutes.Value;
@@ -93,6 +95,7 @@ namespace PomodoroTimer
             timeValue.Hours = numericUpDownHours.Value;
         }
 
+        // Stop button
         private void pauseTimer_Click(object sender, EventArgs e)
         {
             stop = true;
@@ -105,6 +108,8 @@ namespace PomodoroTimer
 
     }
 
+    // TimeValues class, stores seconds, minutes, hours, and 
+    // control values used throughout timer.
     public class TimeValues
     {
         public decimal Seconds

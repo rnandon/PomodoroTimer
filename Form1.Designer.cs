@@ -108,7 +108,6 @@
             this.Hours.Size = new System.Drawing.Size(35, 13);
             this.Hours.TabIndex = 5;
             this.Hours.Text = "Hours";
-            this.Hours.Click += new System.EventHandler(this.label1_Click);
             // 
             // label1
             // 
