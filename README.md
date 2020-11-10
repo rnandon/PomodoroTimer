@@ -1,5 +1,4 @@
-<h1>** Pomodoro Timer **</h1>
----
+<h1>Pomodoro Timer</h1>
 
 <h2>Description</h2>
 A simple user interface for a timer; user can set hours, minutes, and seconds
@@ -13,6 +12,6 @@ To build familiarity with the WPF framework and create a useful tool.
 Functional, simple features implemented.
 
 <h2>Technologies used</h2>
-** Language: ** C#
-** IDE: ** Visual Studio 2019
-** Framework: ** .NET, WPF
+Language: C#
+IDE: Visual Studio 2019
+Framework: .NET, WPF
