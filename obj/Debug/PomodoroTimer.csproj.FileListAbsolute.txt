@@ -1,0 +1,10 @@
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\bin\Debug\PomodoroTimer.exe.config
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\bin\Debug\PomodoroTimer.exe
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\bin\Debug\PomodoroTimer.pdb
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.csprojAssemblyReference.cache
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.Properties.Resources.resources
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.csproj.GenerateResource.cache
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.csproj.CoreCompileInputs.cache
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.exe
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.pdb
+C:\Users\rnanc\Documents\Csharp\Projects\PomodoroTimer\PomodoroTimer\obj\Debug\PomodoroTimer.Form1.resources
