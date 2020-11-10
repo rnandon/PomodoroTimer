@@ -11,14 +11,14 @@ using System.Timers;
 
 namespace PomodoroTimer
 {
-    public partial class Form1 : Form
+    public partial class CountdownForm : Form
     {
         // Initialize static variables to handle timer.
         private static System.Timers.Timer aTimer;
         static bool stop = false;
         static TimeValues timeValue = new TimeValues();
 
-        public Form1()
+        public CountdownForm()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace PomodoroTimer
 {
-    partial class Form1
+    partial class CountdownForm
     {
         /// <summary>
         /// Required designer variable.
@@ -147,20 +147,20 @@
             // 
             this.Reset.Location = new System.Drawing.Point(40, 151);
             this.Reset.Name = "Reset";
-            this.Reset.Size = new System.Drawing.Size(176, 23);
+            this.Reset.Size = new System.Drawing.Size(176, 30);
             this.Reset.TabIndex = 9;
             this.Reset.Text = "Reset Timer";
             this.Reset.UseVisualStyleBackColor = true;
             this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
-            // Form1
+            // CountdownForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(261, 186);
+            this.ClientSize = new System.Drawing.Size(261, 189);
             this.Controls.Add(this.Reset);
             this.Controls.Add(this.pauseTimer);
             this.Controls.Add(this.label2);
@@ -172,9 +172,9 @@
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "CountdownForm";
             this.ShowIcon = false;
-            this.Text = "Timer";
+            this.Text = "Countdown";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeconds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinutes)).EndInit();
