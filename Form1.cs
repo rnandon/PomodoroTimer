@@ -106,6 +106,19 @@ namespace PomodoroTimer
 
         }
 
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            // Resets values to all the TimeValues variables, then redefines
+            // them with the time on the boxes.
+            timeValue.Seconds = 0;
+            timeValue.Minutes = 0;
+            timeValue.Hours = 0;
+            timeValue.TimeRemaining = 0;
+            timeValue.InitialTime = 0;
+            numericUpDownSeconds_ValueChanged(sender, e);
+            numericUpDownMinutes_ValueChanged(sender, e);
+            numericUpDownHours_ValueChanged(sender, e);
+        }
     }
 
     // TimeValues class, stores seconds, minutes, hours, and 

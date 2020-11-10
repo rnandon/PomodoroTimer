@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pauseTimer = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeconds)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHours)).BeginInit();
@@ -142,6 +143,16 @@
             this.pauseTimer.UseVisualStyleBackColor = true;
             this.pauseTimer.Click += new System.EventHandler(this.pauseTimer_Click);
             // 
+            // Reset
+            // 
+            this.Reset.Location = new System.Drawing.Point(40, 151);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(176, 23);
+            this.Reset.TabIndex = 9;
+            this.Reset.Text = "Reset Timer";
+            this.Reset.UseVisualStyleBackColor = true;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,7 +160,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(261, 149);
+            this.ClientSize = new System.Drawing.Size(261, 186);
+            this.Controls.Add(this.Reset);
             this.Controls.Add(this.pauseTimer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,6 +193,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button pauseTimer;
+        private System.Windows.Forms.Button Reset;
     }
 }
 
